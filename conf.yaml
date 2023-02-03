@@ -33,8 +33,8 @@ training:
     path: 'output/'    # network storage dir
 
 model:
-  filters: 64
-  residual_blocks: 10
+  filters: 8
+  residual_blocks: 2
   se_ratio: 2                          # Squeeze Excite structural network architecture. 2
   #policy: 'attention'                  # attention policy fields: 
   pol_embedding_size: 64               # embedding vector size 64
