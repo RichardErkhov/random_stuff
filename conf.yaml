@@ -30,7 +30,7 @@ training:
     policy_loss_weight: 1.0            # weight of policy loss
     value_loss_weight: 1.0             # weight of value loss
     moves_left_loss_weight: 1.0        # weight of moves-left loss
-    path: 'output/'    # network storage dir
+    path: '/content/drive/chess_model/'    # network storage dir
 
 model:
   filters: 8
