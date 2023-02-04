@@ -13,6 +13,7 @@ dataset:
   # input: '/path/to/chunks/*/draw/'
   train_workers: 64
 training:
+    precision: 'half'
     batch_size: 256                   # training batch
     test_steps: 2000                   # eval test set values after this many steps
     train_avg_report_steps: 200        # training reports its average values after this many steps.
