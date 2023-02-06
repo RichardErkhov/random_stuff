@@ -4,7 +4,8 @@ name: '64x10'                       # ideally no spaces128x10
 gpu: 0                                 # gpu id to process on
 
 dataset: 
-  num_chunks: 10000                   # newest nof chunks to parse
+  num_chunks: 1257126                   # newest nof chunks to parse
+  allow_less_chunks: true
   train_ratio: 0.95                    # trainingset ratio
   # For separated test and train data.
   input_train: '../a/*/*/' # supports glob
@@ -13,6 +14,21 @@ dataset:
   # input: '/path/to/chunks/*/draw/'
   train_workers: 64
 training:
+    #
+    swa: true
+    swa_output: true
+    swa_steps: 100
+    swa_max_n: 10
+    mask_legal_moves: true
+    lookahead_optimizer: true
+    renorm: true
+    renorm_max_r: 1.0
+    renorm_max_d: 0.0
+    diff_focus_min: 0.025
+    diff_focus_slope: 3.0
+    q_ratio: 0.0
+    max_grad_norm: 4.0
+    #
     precision: 'half'
     batch_size: 256                   # training batch
     test_steps: 2000                   # eval test set values after this many steps
