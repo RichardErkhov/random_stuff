@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-name: '64x10'                       # ideally no spaces128x10
+name: '512x16'                       # ideally no spaces128x10
 gpu: 0                                 # gpu id to process on
 
 dataset: 
