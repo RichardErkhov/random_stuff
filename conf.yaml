@@ -8,8 +8,8 @@ dataset:
   allow_less_chunks: true
   train_ratio: 0.99                    # trainingset ratio
   # For separated test and train data.
-  input_train: '/content/a/*/*/' # supports glob
-  input_test: '/content/a/*/*/'  # supports glob
+  input_train: '/content/a/*/*/*/' # supports glob
+  input_test: '/content/a/*/*/*/'  # supports glob
   # For a one-shot run with all data in one directory.
   # input: '/path/to/chunks/*/draw/'
   train_workers: 64
