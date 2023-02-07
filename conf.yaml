@@ -10,7 +10,7 @@ dataset:
   # For separated test and train data.
   #/content/a/*/*/*/
   #../data/*/
-  input_train: '../data/*/' # supports glob
+  input_train: '/content/a/*/*/*/' # supports glob
   input_test: '../data/*/'  # supports glob
   # For a one-shot run with all data in one directory.
   # input: '/path/to/chunks/*/draw/'
