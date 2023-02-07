@@ -137,7 +137,7 @@ class TFProcess:
             raise ValueError("Unknown precision: {}".format(precision))
 
         # Scale the loss to prevent gradient underflow
-        self.loss_scale = 1 if self.model_dtype == tf.float32 else loss_scale
+        self.loss_scale = 1# if self.model_dtype == tf.float32 else loss_scale
 
         policy_head = self.cfg['model'].get('policy', 'convolution')
         value_head = self.cfg['model'].get('value', 'wdl')
