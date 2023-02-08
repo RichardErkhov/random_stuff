@@ -37,7 +37,7 @@ training:
     train_avg_report_steps: 250        # training reports its average values after this many steps.
     total_steps: 140000                # terminate after these steps
     warmup_steps: 250                  # if global step is less than this, scale the current LR by ratio of global step to this value
-    checkpoint_steps: 750          # optional frequency for checkpointing before finish
+    checkpoint_steps: 500          # optional frequency for checkpointing before finish
     shuffle_size: 250000               # size of the shuffle buffer
     lr_values:                         # list of learning rates
         - 0.01
